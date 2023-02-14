@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 238, 238);
+}
+.wrap{
+    width: 1000px;
+    margin: auto;
+}
+
+
+/************HEADER**************/
+.header{
+    width: 100%;
+    background-image: url(../img/header-bgc.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.header .info{
+    margin-left: 110px;
+    margin-top: 145px;
+    margin-bottom: 25px;
+}
+.header .info img{  
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.info h2{
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.info p{
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+.contact{
+    color:white;
+    margin-left: 150px;
+    list-style: none;
+}
+.contact li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contact li img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/************CONTENT 內容**************/
+.content{
+    padding-top: 50px;
+    width: 100%;
+    margin: auto;
+}
+.content h2{
+    text-align: center;
+    margin: 50px 0  40px 0;
+    color: blue;
+}
+.content ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+}
+.content ul >li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom:5px solid orange;
+    background-color: #fff;
+    width: 30%;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+.content ul >li:nth-child(2){
+    border-bottom:5px solid green;
+}
+.content ul >li:nth-child(3){
+    border-bottom:5px solid rgb(121, 28, 235);
+}
+.content ul >li:nth-child(3) img{
+    height: 79px;
+}
+.content ul >li:nth-child(1) img{
+    height: 79px;
+}
+
+.skill-Title{
+    margin: 20px 0; 
+}
+.skill-Exp{
+    list-style:inside;
+    line-height: 1.5;
+    padding-inline-start: 0px;
+    padding-right: 40px;
+}
+
+/************EXPERIENCE時間軸**************/
+.timeline h2{
+    text-align: center;
+    margin: 50px 0  40px 0;
+    color: blue;
+}
+.timeline{
+    width: 100%;
+    position: relative;
+}
+.timeline::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: lightgray;
+    top: 70px;
+    bottom: 5px;
+    left: 499px;
+}
+.dot{
+    list-style: none;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid lightgrey;
+    width: 50px;
+}
+.dot li{
+    z-index: 100;
+    margin-bottom: 150px;
+}
+.dot li:first-child{
+    margin-bottom: 85px; 
+}
+
+.timeline .workExp1{
+    position: absolute;
+    border: 1px solid palevioletred;
+    width: 35%;
+    border-radius: 5px;
+    padding: 5px;
+    top: 195px;
+    right: 120px;
+}
+.workExp1 p{
+    line-height: 1.5;
+    margin: 5px 0px 10px 5px;
+}
+
+.timeline .workExp2{
+    position: absolute;
+    border: 1px solid palevioletred;
+    width: 35%;
+    border-radius: 5px;
+    padding: 5px;
+    top: 375px;
+    left: 120px;
+    text-align: right;
+}
+.workExp2 p{
+    margin: 5px 5px 10px 0;
+    line-height: 1.5;
+}
+.timeline .workExp3{
+    position: absolute;
+    border: 1px solid palevioletred;
+    width: 35%;
+    border-radius: 5px;
+    bottom: 20px;
+    right: 120px;
+}
+.workExp3 p{
+    line-height: 1.5;
+    margin: 5px 0px 10px 10px;
+}
+.position{
+    color:brown;
+    font-weight: bold;
+}
+.company{
+    color: gray;
+}
+.lorem{
+    color:lightgray;
+}
+
+/************WORKS作品**************/
+.portfolio{
+    margin-top: 50px;
+    width: 100%;
+}
+.portfolio h2{
+    text-align: center;
+    margin: 50px 0  40px 0;
+    color: rgb(235, 28, 190);
+}
+.portfolio-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border-radius: 5px;
+}
+.portfolio-list li{
+    width: 30%;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.portfolio-list li:first-child a img{
+    display: block;
+    padding-left: 31%;
+    padding-top: 10%;
+    background-color: rgba(224, 116, 134, 0.921);
+    border-radius: 5px 5px 0 0;
+}
+.portfolio-list li:nth-child(2) a {
+    display: block;
+    padding: 10% 35%;
+    background-color: rgb(71, 61, 61);
+    border-radius: 5px 5px 0 0;
+}
+.portfolio-list li:nth-child(3) a {
+    display: block;
+    padding: 10% 35%;
+    background-color: skyblue;
+    border-radius: 5px 5px 0 0;
+}
+.portfolio-list li p{
+    padding: 0 0  10px 10px;
+}
+.portfolio-list li h4{
+    padding: 10px 0 0 10px;
+}
+.portfolio-list li:hover{
+    box-shadow: 0px 5px 5px gray;
+}
+
+
+/************ABOUT*************/
+.about{
+    width: 100%;
+    margin: 100px 0 50px 0;
+}
+.about h2{
+    text-align: center;
+    margin: 50px 0  40px 0;
+    color: rgb(235, 28, 190);
+}
+.about-mei{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0 50px;
+}
+.about-mei img{
+    width: 30%;
+    margin-left: 65px;
+}
+.about-txt p{
+    margin-left: 50px;
+    padding-bottom: 20px;
+    line-height: 2;
+}
+
+/************FOOTER*************/
+.footer{
+    width: 100%;
+    background-image: url(../img/img-Looper-bg.png);
+    text-align: center;
+    height: 87px;
+    padding: 40px;
+}
